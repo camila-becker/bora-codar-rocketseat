@@ -17,51 +17,55 @@
   <body>
     <div id="app">
       <div class="display">
-        <div class="operation">1 + 1</div>
+        <div>
+          <input type="text" id="operation" disabled="true" />
+        </div>
         <div class="result">
           <img src="./assets/equal-sign.svg" alt="Sinal de igual" />
-          <span>2</span>
+          <span class="display-result">2</span>
         </div>
       </div>
       <div id="keyboard">
-        <button class="primary">CE</button>
-        <button>C</button>
-        <button>
+        <button class="primary clear-button"  >CE</button>
+        <button class="backspace-button">C</button>
+        <button value="%">
           <img src="./assets/percent.svg" alt="Sinal de porcentagem" />
         </button>
-        <button class="bg-secondary">
+        <button value="/" class="bg-secondary">
           <img src="./assets/divide.svg" alt="Sinal de divisão" />
         </button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="bg-secondary">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button class="bg-secondary" value="*">
           <img src="./assets/multiply.svg" alt="Sinal de multiplicação" />
         </button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="bg-secondary">
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button class="bg-secondary" value="-">
           <img src="./assets/minus.svg" alt="Sinal de subtração" />
         </button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="bg-secondary">
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button class="bg-secondary" value="+">
           <img src="./assets/plus.svg" alt="Sinal de adição" />
         </button>
-        <button>
+        <button value="plus-minus">
           <img
             src="./assets/plus-minus.svg"
             alt="Sinal de subtração e adição"
           />
         </button>
-        <button>0</button>
-        <button>,</button>
-        <button class="bg-light">
+        <button value="0">0</button>
+        <button value=",">,</button>
+        <button class="bg-light" value="=">
           <img src="./assets/equals.svg" alt="Sinal de igual" />
         </button>
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>

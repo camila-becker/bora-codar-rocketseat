@@ -32,11 +32,15 @@ body {
   padding: 0 22px 0 18px;
 }
 
-.operation {
+#operation {
+  background-color: transparent;
+  border: none;
   text-align: right;
   color: #6b6b6b;
   font-size: 20px;
   line-height: 140%;
+  height: 28px;
+  font-family: "Rubik", sans-serif;
 }
 
 .result {
